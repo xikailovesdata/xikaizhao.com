@@ -1,0 +1,278 @@
+/* ----------------------------------------------------------------
+    Typography
+-----------------------------------------------------------------*/
+*{
+	outline:none!important;
+}
+body {
+    line-height: 1.5;
+    color: #333;
+    font-family: "Raleway",sans-serif;
+	font-weight:400;
+}
+
+a {
+	text-decoration: none !important;
+	color: #6a6a6a;
+}
+.active a{
+	color:#42c0d9;
+	background:#f9f9f9;
+}
+a:hover { color: #42c0d9; }
+
+a img { border: none; }
+
+img { max-width: 100%; }
+
+
+/* ----------------------------------------------------------------
+    Basic Layout Styles
+-----------------------------------------------------------------*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 20px 0;
+	font-family:"Raleway",sans-serif;
+}
+
+h5,
+h6 {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 30px; }
+
+h2 { font-size: 25px; }
+
+h3 { font-size: 20px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 12px; }
+
+h1 > span,
+h2 > span,
+h3 > span,
+h4 > span,
+h5 > span,
+h6 > span { color: #0093BF; }
+
+p,
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset,
+form,
+ul ul,
+ol ul,
+ul ol,
+ol ol { margin-bottom: 20px;  line-height:24px;
+font-size:13px; }
+
+
+#wrapper {
+    position: relative;
+    float: none;
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #FFF;
+}
+/* ----------------------------------------------------------------
+    Header
+-----------------------------------------------------------------*/
+
+
+#header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#header .container { position: relative; }
+#header-wrap{
+padding:15px 0;
+}
+
+/* ----------------------------------------------------------------
+    Logo
+-----------------------------------------------------------------*/
+
+
+#logo {
+    position: relative;
+    float: left;
+    font-size: 36px;
+    line-height: 100%;
+	text-align:center;
+	width:100%;
+}
+
+#logo a {
+    display: inline-block;
+    color: #42c0d9;
+	text-transform:uppercase;
+	font-weight:700;
+}
+
+#logo img {
+    display:inline- block;
+    max-width: 100%;
+}
+
+/* ----------------------------------------------------------------
+    Content
+-----------------------------------------------------------------*/
+.docs-content-inner {
+    float: left;
+    width: 100%;
+}
+
+#content {
+    position: relative;
+    background-color: #FFF;
+}
+
+#content p { line-height: 1.7; }
+
+.content-wrap {
+    position: relative;
+    padding: 60px 0;
+}
+
+#content .container { position: relative; }
+
+
+/* ----------------------------------------------------------------
+    Docs
+-----------------------------------------------------------------*/
+
+.navigation {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 350px;
+    height: auto;
+	bottom:0;
+    border-right: 1px solid #EEE;
+	z-index:99;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.navigation ul li {
+    position: relative;
+    border-top: 1px solid #EEE;
+}
+
+.navigation ul ul {
+    margin: 0;
+    border-top: 1px solid #EEE;
+}
+
+.navigation ul li:first-child { border-top: 0; }
+
+.navigation ul a {
+    display: block;
+    position: relative;
+    padding: 13px 60px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navigation ul li a:hover { background-color: #F9F9F9; }
+
+.navigation ul li.ui-tabs-active > a {
+    background-color: #f18700;
+    color: #FFF;
+}
+
+.navigation ul ul { display: none; }
+
+.navigation ul li.ui-tabs-active ul { display: block; }
+
+.navigation ul ul a {
+    color: #666;
+    padding: 8px 60px 8px 75px;
+    font-size: 13px;
+}
+
+.navigation ul ul li.current a {
+    background-color: #F9F9F9;
+    color: #444;
+}
+
+.navigation ul ul li.current a:after {
+    content: "\e7a5";
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.docs-content {
+    position: relative;
+    overflow: hidden;
+    margin-left: 230px;
+    padding: 90px 0 60px 65px;
+    min-height: 1000px;
+}
+.navbar-nav{
+	width:100%;
+	float:left;
+	height:auto;
+	margin:0 0 20px;
+}
+.navbar-nav > li {
+    float: left;
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------
+    Bootstrap Specific
+-----------------------------------------------------------------*/
+#docs-pageel-grid{
+	margin:0 0 20px;
+}
+.show-grid [class^=col-],
+.show-grid [class^=col_] {
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#eee;
+    border:1px solid #ddd;
+}
+#map{
+	margin:0 0 15px;
+}
+.show-grid [class^=col_] {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
